@@ -10,14 +10,21 @@ import React, { Component } from 'react'
     }
     
   render() {
+    let Message
     if (this.state.isLoggedIn) {
-        return(
-            <div>Welcome mercy</div>
-        )
+        Message= <h1>Welcome Mercy!</h1>;
     }else {
-        return(<div>Welcome guest</div>
-            )
+        Message = <div>welcome guest</div>
     }
+    return <div>{Message}</div>
+    // if (this.state.isLoggedIn) {
+    //     return(
+    //         <div>Welcome mercy</div>
+    //     )
+    // }else {
+    //     return(<div>Welcome guest</div>
+    //         )
+    // }
 
     // return (
     //     <div>
