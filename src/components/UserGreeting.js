@@ -5,15 +5,20 @@ import React, { Component } from 'react'
       super(props)
     
       this.state = {
-         isLoggedIn:false
+         isLoggedIn:true
       }
     }
     
   render() {
-     return this.state.isLoggedIn ? (
-    <div>Welcome Mercy</div> ) : (
-    <div>welcome guest</div>
-    )
+
+    //logical operators
+     return this.state.isLoggedIn && <div>welcome mercy </div>
+    //tenary operator
+    //  return this.state.isLoggedIn ? (
+    // <div>Welcome Mercy</div> ) : (
+    // <div>welcome guest</div>
+    // )
+    //element operators
     // let Message
     // if (this.state.isLoggedIn) {
     //     Message= <h1>Welcome Mercy!</h1>;
@@ -21,6 +26,7 @@ import React, { Component } from 'react'
     //     Message = <div>welcome guest</div>
     // }
     // return <div>{Message}</div>
+    //conditional operators
     // if (this.state.isLoggedIn) {
     //     return(
     //         <div>Welcome mercy</div>
